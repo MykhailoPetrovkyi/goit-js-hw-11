@@ -32,6 +32,7 @@ form.addEventListener('submit', e => {
           message: `❌ Sorry, there are no images matching your search query. Please enter the correct values!`,
           position: 'topRight',
         });
+        clearImages();
         return;
       }
       renderImages(data.hits);
